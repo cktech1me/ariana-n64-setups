@@ -8,54 +8,63 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-  padding: 20px;
-  color: #333;
+  padding: 16px;
+  color: #1a1a1a;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 
 .header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 40px 20px;
+  padding: 48px 24px;
   text-align: center;
 }
 
 .header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .header p {
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.9;
+  font-weight: 500;
 }
 
 .content {
-  padding: 30px 20px;
+  padding: 40px 24px;
 }
 
 h2 {
   color: #667eea;
-  font-size: 22px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 28px;
   border-bottom: 3px solid #667eea;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  font-weight: 700;
+}
+
+h2:first-child {
+  margin-top: 0;
 }
 
 .table-wrapper {
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow-x: auto;
+  background: white;
 }
 
 table {
@@ -64,22 +73,24 @@ table {
 }
 
 thead {
-  background: #f8f9fa;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 th {
-  background: #667eea;
   color: white;
-  padding: 15px;
+  padding: 18px;
   text-align: left;
   font-weight: 600;
   font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 td {
-  padding: 15px;
-  border-bottom: 1px solid #eee;
+  padding: 18px;
+  border-bottom: 1px solid #f0f0f0;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 tr:last-child td {
@@ -87,74 +98,235 @@ tr:last-child td {
 }
 
 tr:nth-child(even) {
-  background: #f8f9fa;
+  background: #fafafa;
 }
 
 strong {
   color: #667eea;
+  font-weight: 600;
 }
 
 .info-box {
-  background: #f0f4ff;
-  border-left: 4px solid #667eea;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 4px;
-  line-height: 1.6;
+  background: linear-gradient(135deg, #f0f4ff 0%, #f5f1ff 100%);
+  border-left: 5px solid #667eea;
+  padding: 28px;
+  margin: 28px 0;
+  border-radius: 12px;
+  line-height: 1.8;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
 }
 
 .info-box p {
-  margin: 8px 0;
+  margin: 12px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.info-box strong {
+  color: #667eea;
+  font-size: 16px;
 }
 
 .setup-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 28px;
 }
 
 .setup-image-card {
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.setup-image-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.setup-image-card h3 {
+  padding: 16px;
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fafafa;
 }
 
 .setup-image-card img {
   width: 100%;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
   display: block;
   background: #f0f0f0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.setup-image-card img:hover {
+  transform: scale(1.03);
 }
 
 .setup-image-card p {
-  padding: 15px;
-  background: #f8f9fa;
+  padding: 16px;
+  background: white;
   font-size: 13px;
   color: #666;
   font-style: italic;
+  line-height: 1.5;
 }
 
+/* Mobile optimizations */
 @media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    border-radius: 16px;
+  }
+
+  .header {
+    padding: 32px 20px;
+  }
+
   .header h1 {
-    font-size: 22px;
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 14px;
   }
 
   .content {
-    padding: 20px 15px;
+    padding: 24px 16px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .table-wrapper {
+    margin-bottom: 28px;
+    border-radius: 10px;
   }
 
   th,
   td {
-    padding: 10px;
+    padding: 12px 10px;
     font-size: 12px;
+  }
+
+  th {
+    font-size: 11px;
+  }
+
+  .info-box {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .info-box p {
+    font-size: 14px;
   }
 
   .setup-images {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
+
+  .setup-image-card h3 {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .setup-image-card img {
+    height: 240px;
+  }
+
+  .setup-image-card p {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  .header {
+    padding: 24px 16px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .header p {
+    font-size: 13px;
+  }
+
+  .content {
+    padding: 16px 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  th,
+  td {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+
+  .info-box {
+    padding: 16px;
+    margin: 16px 0;
+    border-left-width: 4px;
+  }
+
+  .info-box p {
+    font-size: 13px;
+  }
+
+  .setup-images {
+    gap: 16px;
+  }
+
+  .setup-image-card img {
+    height: 200px;
+  }
+}
+
+/* Smooth transitions */
+button, a, img {
+  transition: all 0.2s ease;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
 }
