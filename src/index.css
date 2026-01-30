@@ -63,7 +63,6 @@ h2:first-child {
   margin-bottom: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  overflow-x: auto;
   background: white;
 }
 
@@ -129,7 +128,7 @@ strong {
 
 .setup-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 28px;
   margin-top: 28px;
 }
