@@ -59,7 +59,6 @@
         }
 
         .table-wrapper {
-            overflow-x: auto;
             margin-bottom: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -68,7 +67,6 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 500px;
         }
 
         thead {
@@ -197,6 +195,56 @@
             }
         }
 
+        @media (max-width: 768px) {
+            table, thead, tbody, tr, td, th {
+                display: block;
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                border: 1px solid #ddd;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            td {
+                display: block;
+                text-align: left;
+                padding: 12px;
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 140px;
+            }
+
+            td:last-child {
+                border-bottom: none;
+            }
+
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 12px;
+                font-weight: 600;
+                color: #667eea;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            tr:nth-child(even) {
+                background: white;
+            }
+
+            tr:nth-child(odd) {
+                background: #f8f9fa;
+            }
+        }
+
         @media (max-width: 480px) {
             body {
                 padding: 10px;
@@ -224,8 +272,17 @@
             }
 
             th, td {
-                padding: 10px 6px;
+                font-size: 13px;
+            }
+
+            td {
+                padding: 10px;
+                padding-left: 120px;
+            }
+
+            td:before {
                 font-size: 11px;
+                left: 10px;
             }
 
             .setup-section {
@@ -272,8 +329,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>1: Switch 2 Bundle</strong></td>
-                            <td>
+                            <td data-label="Setup"><strong>1: Switch 2 Bundle</strong></td>
+                            <td data-label="Components">
                                 • Switch 2 Mario Kart World Bundle ($499.99)<br>
                                 • 512GB microSD Express ($89.99)<br>
                                 • NSO N64 Controller ($54.99)<br>
@@ -282,41 +339,41 @@
                                 • Screen Protector ($12)<br>
                                 • Controller Accessory Pack ($15)
                             </td>
-                            <td>$761.95</td>
-                            <td>$47.62</td>
-                            <td>$0</td>
-                            <td>$809.57</td>
-                            <td><strong>$680</strong></td>
-                            <td>New</td>
+                            <td data-label="Subtotal">$761.95</td>
+                            <td data-label="Tax">$47.62</td>
+                            <td data-label="Shipping">$0</td>
+                            <td data-label="Retail Total">$809.57</td>
+                            <td data-label="Deal"><strong>$680</strong></td>
+                            <td data-label="Condition">New</td>
                         </tr>
                         <tr>
-                            <td><strong>2: Analogue 3D</strong></td>
-                            <td>
+                            <td data-label="Setup"><strong>2: Analogue 3D</strong></td>
+                            <td data-label="Components">
                                 • Analogue 3D White ($269.99)<br>
                                 • 8BitDo N64 White ($44.99)<br>
                                 • Kaico SummerCart64 32GB ($89.99)
                             </td>
-                            <td>$404.97</td>
-                            <td>$26.62</td>
-                            <td>$20</td>
-                            <td>$451.59</td>
-                            <td><strong>$451.59</strong></td>
-                            <td>New</td>
+                            <td data-label="Subtotal">$404.97</td>
+                            <td data-label="Tax">$26.62</td>
+                            <td data-label="Shipping">$20</td>
+                            <td data-label="Retail Total">$451.59</td>
+                            <td data-label="Deal"><strong>$451.59</strong></td>
+                            <td data-label="Condition">New</td>
                         </tr>
                         <tr>
-                            <td><strong>3: OLED Switch Bundle</strong></td>
-                            <td>
+                            <td data-label="Setup"><strong>3: OLED Switch Bundle</strong></td>
+                            <td data-label="Components">
                                 • OLED Switch w/ Dock ($349.99)<br>
                                 • NSO N64 Controller ($54.99)<br>
                                 • 512GB microSDXC ($69.99)<br>
                                 • Case ($25)
                             </td>
-                            <td>$499.97</td>
-                            <td>$31.25</td>
-                            <td>$0</td>
-                            <td>$531.22</td>
-                            <td><strong>$325</strong></td>
-                            <td>Open box (barely used)</td>
+                            <td data-label="Subtotal">$499.97</td>
+                            <td data-label="Tax">$31.25</td>
+                            <td data-label="Shipping">$0</td>
+                            <td data-label="Retail Total">$531.22</td>
+                            <td data-label="Deal"><strong>$325</strong></td>
+                            <td data-label="Condition">Open box (barely used)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -335,22 +392,22 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Switch 2 Online</strong></td>
-                            <td>~75 emulated games (Expansion Pack req'd, $50/yr); official wireless controllers; save states; some emulation glitches</td>
-                            <td>~15 emulated games (Expansion Pack); official wireless controller</td>
-                            <td>Portable; online multiplayer; subscription required; GameCube support</td>
+                            <td data-label="Platform"><strong>Switch 2 Online</strong></td>
+                            <td data-label="N64">~75 emulated games (Expansion Pack req'd, $50/yr); official wireless controllers; save states; some emulation glitches</td>
+                            <td data-label="GameCube">~15 emulated games (Expansion Pack); official wireless controller</td>
+                            <td data-label="Notes">Portable; online multiplayer; subscription required; GameCube support</td>
                         </tr>
                         <tr>
-                            <td><strong>Switch OLED Online</strong></td>
-                            <td>~75 emulated games (Expansion Pack req'd, $50/yr); official wireless controllers; save states; some emulation glitches</td>
-                            <td>Not available</td>
-                            <td>Portable; online multiplayer; subscription required</td>
+                            <td data-label="Platform"><strong>Switch OLED Online</strong></td>
+                            <td data-label="N64">~75 emulated games (Expansion Pack req'd, $50/yr); official wireless controllers; save states; some emulation glitches</td>
+                            <td data-label="GameCube">Not available</td>
+                            <td data-label="Notes">Portable; online multiplayer; subscription required</td>
                         </tr>
                         <tr>
-                            <td><strong>Analogue 3D</strong></td>
-                            <td>100% cart compatibility (FPGA); ROM/homebrew via flashcart; 64DD support; region-free; 4K output</td>
-                            <td>Not available</td>
-                            <td>No subscription needed; cartridge-based; top accuracy and low latency</td>
+                            <td data-label="Platform"><strong>Analogue 3D</strong></td>
+                            <td data-label="N64">100% cart compatibility (FPGA); ROM/homebrew via flashcart; 64DD support; region-free; 4K output</td>
+                            <td data-label="GameCube">Not available</td>
+                            <td data-label="Notes">No subscription needed; cartridge-based; top accuracy and low latency</td>
                         </tr>
                     </tbody>
                 </table>
