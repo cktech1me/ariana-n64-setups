@@ -1,8 +1,8 @@
-# Adriana's Nintendo 64 Setup Comparison (1me Games - Chris King)
+# Ariana's Nintendo 64 Setup Comparison (1me Games - Chris King)
 
 ## Cost Breakdown by Setup
 
-| Setup | Components | Subtotal | Tax (6.25%) | Shipping | Retail Total | Adriana's Deal | Condition |
+| Setup | Components | Subtotal | Tax (6.25%) | Shipping | Retail Total | Ariana's Deal | Condition |
 |-------|-----------|----------|------------|----------|--------------|---------|-----------|
 | **1: Switch 2 Bundle** | • Switch 2 Mario Kart World Bundle ($499.99)<br>• 512GB microSD Express ($89.99)<br>• NSO N64 Controller ($54.99)<br>• NSO GameCube Controller ($64.99)<br>• Case ($25)<br>• Screen Protector ($12)<br>• Controller Accessory Pack ($15) | $761.95 | $47.62 | $0 | $809.57 | **$680** | New |
 | **2: Analogue 3D** | • Analogue 3D White ($269.99)<br>• 8BitDo N64 White ($44.99)<br>• Kaico SummerCart64 32GB ($89.99) | $404.97 | $26.62 | $20 | $451.59 | **$451.59** | New |
