@@ -60,7 +60,7 @@ const setups = [
     shipping: 'FREE',
     retailTotal: '$449.99',
     arianasDeal: '$292.49 (35% off)',
-    condition: 'New'
+    condition: 'Open box, but mint'
   }
 ]
 
