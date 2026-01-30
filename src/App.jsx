@@ -8,7 +8,11 @@ export default function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>🎮 Ariana's "R" Us</h1>
+        <img 
+          src="./logo.webp" 
+          alt="Ariana's R Us" 
+          style={{ maxHeight: '200px', marginBottom: '16px' }}
+        />
         <p>Nintendo 64 Setup Comparison and Random Kindle</p>
       </header>
 
