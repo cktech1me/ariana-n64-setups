@@ -75,16 +75,7 @@ thead {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-th {
-  color: white;
-  padding: 18px;
-  text-align: left;
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
+th,
 td {
   padding: 18px;
   border-bottom: 1px solid #f0f0f0;
@@ -103,6 +94,20 @@ tr:nth-child(even) {
 strong {
   color: #667eea;
   font-weight: 600;
+}
+
+/* Hide less important columns on mobile */
+@media (max-width: 768px) {
+  th:nth-child(3),
+  td:nth-child(3),
+  th:nth-child(4),
+  td:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(6),
+  td:nth-child(6) {
+    display: none;
+  }
 }
 
 .info-box {
@@ -223,8 +228,6 @@ strong {
   th {
     font-size: 11px;
   }
-
-  .info-box {
     padding: 20px;
     margin: 20px 0;
   }
