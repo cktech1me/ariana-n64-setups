@@ -53,13 +53,13 @@ const setups = [
     components: [
       'Amazon Kindle Scribe (64GB) ($449.99)',
       'Premium Pen - Metallic Jade ($0 - included)',
-      'Kindle Unlimited ($0 for 3 months, $11.99/month after)'
+      'Plant-Based Leather Folio Case ($79.99)'
     ],
-    subtotal: '$449.99',
-    tax: '$0 (digital)',
+    subtotal: '$529.98',
+    tax: '$33.12',
     shipping: 'FREE',
-    retailTotal: '$449.99',
-    arianasDeal: '$292.49 (35% off)',
+    retailTotal: '$563.10',
+    arianasDeal: '$366.02 (35% off)',
     condition: 'Open box, but mint'
   }
 ]
