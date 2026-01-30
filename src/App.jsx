@@ -8,8 +8,8 @@ export default function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>🎮 Ariana's Nintendo 64 Setup Comparison</h1>
-        <p>1me Games - Chris King</p>
+        <h1>🎮 Ariana's "R" Us</h1>
+        <p>Nintendo 64 Setup Comparison and Random Kindle</p>
       </header>
 
       <div className="content">
