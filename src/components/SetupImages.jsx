@@ -4,22 +4,22 @@ import Modal from './Modal'
 const setups = [
   {
     title: 'Setup 1: Switch 2 Bundle',
-    image: './1-switch2.jpeg',
+    image: './1-switch2.webp',
     description: 'Nintendo Switch 2 with Mario Kart World Bundle, including GameCube and N64 controllers, microSD card, and accessories'
   },
   {
     title: 'Setup 2: Analogue 3D',
-    image: './2-analogue3d.jpeg',
+    image: './2-analogue3d.webp',
     description: 'Analogue 3D white console with 8BitDo N64 controller and Kaico SummerCart64 flash cart'
   },
   {
     title: 'Setup 3: OLED Switch Bundle',
-    image: './3-oled-switch1.jpeg',
+    image: './3-oled-switch1.webp',
     description: 'Nintendo Switch OLED with dock, N64 controller, 512GB microSD card, and protective case'
   },
   {
     title: 'Setup 4: Amazon Kindle Scribe',
-    image: './4-kindle.png',
+    image: './4-kindle.webp',
     description: 'Amazon Kindle Scribe (64GB) with Premium Pen - Metallic Jade. Your notes, documents and books, all in one place with built-in AI notebook summarization'
   }
 ]
