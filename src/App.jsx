@@ -1,9 +1,9 @@
 import React from 'react'
-import ConsoleSelector from './components/ConsoleSelector'
-import CostBreakdown from './components/CostBreakdown'
-import FeaturesComparison from './components/FeaturesComparison'
-import WhatsIncluded from './components/WhatsIncluded'
+import SetupPricingSelector from './components/SetupPricingSelector'
 import SetupImages from './components/SetupImages'
+import FeaturesComparison from './components/FeaturesComparison'
+import NSOGameLibrary from './components/NSOGameLibrary'
+import WhatsIncluded from './components/WhatsIncluded'
 
 export default function App() {
   return (
@@ -18,10 +18,10 @@ export default function App() {
       </header>
 
       <div className="content">
-        <ConsoleSelector />
+        <SetupPricingSelector />
         <SetupImages />
-        <CostBreakdown />
         <FeaturesComparison />
+        <NSOGameLibrary />
         <WhatsIncluded />
       </div>
     </div>
