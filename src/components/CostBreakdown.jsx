@@ -5,7 +5,7 @@ const setups = [
     name: 'Switch 2 Bundle',
     components: [
       'Switch 2 Mario Kart World Bundle ($499.99)',
-      '512GB microSD Express ($89.99)',
+      '⚡ 512GB microSD Express ($89.99) - Fast load times',
       'NSO N64 Controller ($54.99)',
       'NSO GameCube Controller ($64.99)',
       'Case ($25)',

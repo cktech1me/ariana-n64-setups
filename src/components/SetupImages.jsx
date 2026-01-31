@@ -5,7 +5,7 @@ const setups = [
   {
     title: 'Setup 1: Switch 2 Bundle',
     images: ['./1-switch2.webp', './1-2-switch2.webp'],
-    description: 'Nintendo Switch 2 with Mario Kart World Bundle, including GameCube and N64 controllers, microSD card, and accessories'
+    description: 'Nintendo Switch 2 with Mario Kart World Bundle, including GameCube and N64 controllers, ⚡ microSD Express card, and accessories'
   },
   {
     title: 'Setup 2: Analogue 3D',
