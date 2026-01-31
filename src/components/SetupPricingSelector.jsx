@@ -72,7 +72,7 @@ const setups = [
 
 export default function SetupPricingSelector() {
   const [selectedConsoles, setSelectedConsoles] = useState([])
-  const [breakdownExpanded, setBreakdownExpanded] = useState(false)
+  const [breakdownExpanded, setBreakdownExpanded] = useState(true)
 
   const toggleConsole = (id) => {
     setSelectedConsoles(prev => 
