@@ -14,7 +14,7 @@ export default function App() {
           alt="Ariana's R Us" 
           style={{ maxHeight: '200px', marginBottom: '16px' }}
         />
-        <p>Nintendo 64 Setup Comparison and Random Kindle</p>
+        <p>Choose Your Perfect N64 Gaming Setup</p>
       </header>
 
       <div className="content">
