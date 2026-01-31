@@ -242,17 +242,26 @@ strong {
   font-weight: 600;
 }
 
-/* Hide less important columns on mobile */
+/* Hide less important columns on mobile - only for cost breakdown table */
 @media (max-width: 768px) {
-  th:nth-child(3),
-  td:nth-child(3),
-  th:nth-child(4),
-  td:nth-child(4),
-  th:nth-child(5),
-  td:nth-child(5),
-  th:nth-child(6),
-  td:nth-child(6) {
+  .cost-breakdown-table th:nth-child(3),
+  .cost-breakdown-table td:nth-child(3),
+  .cost-breakdown-table th:nth-child(4),
+  .cost-breakdown-table td:nth-child(4),
+  .cost-breakdown-table th:nth-child(5),
+  .cost-breakdown-table td:nth-child(5),
+  .cost-breakdown-table th:nth-child(6),
+  .cost-breakdown-table td:nth-child(6) {
     display: none;
+  }
+  
+  /* Features comparison: keep all columns visible on mobile including GameCube */
+  .features-table {
+    font-size: 13px;
+  }
+  
+  .features-table td {
+    padding: 12px 8px;
   }
 }
 

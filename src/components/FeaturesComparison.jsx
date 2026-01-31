@@ -26,7 +26,7 @@ export default function FeaturesComparison() {
     <>
       <h2>🎮 Features Comparison</h2>
       <div className="table-wrapper">
-        <table>
+        <table className="features-table">
           <thead>
             <tr>
               <th>Platform</th>

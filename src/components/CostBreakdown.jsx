@@ -69,7 +69,7 @@ export default function CostBreakdown() {
     <>
       <h2>💰 Cost Breakdown by Setup</h2>
       <div className="table-wrapper">
-        <table>
+        <table className="cost-breakdown-table">
           <thead>
             <tr>
               <th>Setup</th>
