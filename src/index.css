@@ -467,10 +467,6 @@ h2 {
   margin-bottom: 28px;
   text-shadow: 0 0 10px rgba(0, 255, 200, 0.15);
 }
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 12px;
-  font-weight: 700;
-}
 
 h2:first-child {
   margin-top: 0;
