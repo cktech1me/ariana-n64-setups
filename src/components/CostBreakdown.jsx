@@ -16,7 +16,7 @@ const setups = [
     tax: '$47.62',
     shipping: '$0',
     retailTotal: '$809.57',
-    arianasDeal: '$680 (16% off)',
+    arianasDeal: '$650 (20% off)',
     condition: 'New'
   },
   {
@@ -45,7 +45,7 @@ const setups = [
     tax: '$31.25',
     shipping: '$0',
     retailTotal: '$531.22',
-    arianasDeal: '$325 (39% off)',
+    arianasDeal: '$300 (44% off)',
     condition: 'Open box (console barely used)'
   },
   {

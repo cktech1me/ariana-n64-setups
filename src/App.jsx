@@ -1,4 +1,5 @@
 import React from 'react'
+import ConsoleSelector from './components/ConsoleSelector'
 import CostBreakdown from './components/CostBreakdown'
 import FeaturesComparison from './components/FeaturesComparison'
 import WhatsIncluded from './components/WhatsIncluded'
@@ -17,6 +18,7 @@ export default function App() {
       </header>
 
       <div className="content">
+        <ConsoleSelector />
         <SetupImages />
         <CostBreakdown />
         <FeaturesComparison />

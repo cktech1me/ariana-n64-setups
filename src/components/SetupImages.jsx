@@ -4,18 +4,18 @@ import Modal from './Modal'
 const setups = [
   {
     title: 'Setup 1: Switch 2 Bundle',
-    image: './1-switch2.webp',
+    images: ['./1-switch2.webp', './1-2-switch2.webp'],
     description: 'Nintendo Switch 2 with Mario Kart World Bundle, including GameCube and N64 controllers, microSD card, and accessories'
   },
   {
     title: 'Setup 2: Analogue 3D',
-    image: './2-analogue3d.webp',
+    images: ['./2-analogue3d.webp', './2-2-analogue3d.webp'],
     description: 'Analogue 3D white console with 8BitDo N64 controller and Kaico SummerCart64 flash cart',
     link: 'https://www.analogue.co/3d'
   },
   {
     title: 'Setup 3: OLED Switch Bundle',
-    image: './3-oled-switch1.webp',
+    images: ['./3-oled-switch1.webp', './3-2-oled-switch1.webp'],
     description: 'Nintendo Switch OLED with dock, N64 controller, 512GB microSD card, and protective case'
   },
   {
